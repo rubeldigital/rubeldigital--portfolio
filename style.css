@@ -318,3 +318,11 @@ h2 {
   }
 }
 
+.about-image img {
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
