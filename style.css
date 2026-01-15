@@ -176,3 +176,85 @@ nav a {
   background: #1d4ed8;
   transform: translateY(-2px);
 }
+
+/* === Hero section polish === */
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Headline styling */
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+/* CTA button polish */
+.btn.big {
+  padding: 14px 28px;
+  font-size: 1.05rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.25);
+  transition: all 0.25s ease;
+}
+
+.btn.big:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(0, 123, 255, 0.35);
+}
+
+.hero-badge {
+  display: inline-block;
+  background: #e6f4ea;
+  color: #137333;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.btn.big {
+  padding: 14px 28px;
+  font-size: 1.05rem;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+}
+
+.btn.big:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+  transition: all 0.25s ease;
+  text-align: center;
+  font-weight: 600;
+  color: #222;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
