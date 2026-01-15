@@ -115,3 +115,64 @@ nav a {
   bottom: 20px;
   background: #1dbf73;
 }
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #f5f8ff 0%, #ffffff 100%);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-container {
+  max-width: 900px;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: #e9efff;
+  color: #1f3cff;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #475569;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: #ffffff;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
