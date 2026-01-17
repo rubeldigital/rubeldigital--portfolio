@@ -284,3 +284,46 @@ nav a {
     margin: 0 auto;
   }
 }
+
+/* ===== Service Section – Single Service Layout ===== */
+.service-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.service-text {
+  flex: 1;
+}
+
+.service-text h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.service-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.service-image {
+  flex: 1;
+  text-align: center;
+}
+
+.service-image img {
+  max-width: 280px;   /* 👈 ইমেজ ছোট হলো এখানে */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .service-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
