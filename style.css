@@ -340,48 +340,7 @@ nav a {
   border-radius: 12px;
   object-fit: cover;
 }
-
-/* ===== Service Image Slider ===== */
-.service-image.slider {
-  position: relative;
-  width: 100%;
-  max-width: 500px;
-  height: 320px;
-  overflow: hidden;
-}
-
-.service-image.slider img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  animation: serviceSlider 8s infinite;
-}
-
-/* second image delay */
-.service-image.slider img:nth-child(2) {
-  animation-delay: 4s;
-}
-
-@keyframes serviceSlider {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  45% {
-    opacity: 1;
-  }
-  55% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+/* ===== Service Image Slider (FINAL) ===== */
 
 .service-image.slider {
   position: relative;
@@ -396,16 +355,16 @@ nav a {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   opacity: 0;
-  animation: serviceSlider 8s infinite;
+  animation: servicesSlider 8s infinite;
 }
 
 .service-image.slider img:nth-child(2) {
   animation-delay: 4s;
 }
 
-@keyframes serviceSlider {
+@keyframes servicesSlider {
   0% { opacity: 0; }
   10% { opacity: 1; }
   45% { opacity: 1; }
