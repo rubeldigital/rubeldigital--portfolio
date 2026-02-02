@@ -1,193 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Rubel Digital — Shopify & GMC Specialist</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Rubel Islam | GMC & Shopify Expert</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="header">
-  <div class="container nav">
-    <div class="logo">Rubel<span>Digital</span></div>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#process">Process</a>
-      <a href="#work">Work</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact" class="btn">Contact</a>
-    </nav>
-  </div>
-</header>
+    <header>
+        <nav class="container">
+            <div class="logo">Rubel<span>Digital</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Portfolio</a></li>
+                <li><a href="#contact" class="nav-btn">Hire Me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section class="hero">
-  <div class="hero-container">
-   <span class="hero-badge">✔ Google Merchant Center & Shopify Specialist</span>
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="top-badge">Top Rated eCommerce Specialist</span>
+                <h1>Fix Google Merchant Center & <span>Scale Your Brand</span></h1>
+                <p>আমি মোঃ রুবেল ইসলাম। আমি আপনার ব্যবসার GMC সাসপেনশন ফিক্স করতে এবং শপিফাই স্টোরকে প্রফেশনাল লুক দিতে সাহায্য করি।</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn-primary">Book a Consultation</a>
+                    <a href="#services" class="btn-secondary">View My Services</a>
+                </div>
+            </div>
+            <div class="hero-img-box">
+                <img src="images/about.jpg" alt="Rubel Islam">
+            </div>
+        </div>
+    </section>
 
-    <h1>
-      Fix Google Merchant Center Issues <br />
-      & Grow Your eCommerce Sales
-    </h1>
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">My Professional Services</h2>
+            
+            <div class="tab-wrapper">
+                <button class="tab-btn active" onclick="showService('gmc')">Google Merchant Center</button>
+                <button class="tab-btn" onclick="showService('shopify')">Shopify & Conversion</button>
+            </div>
 
-    <p>
-      I help Shopify and eCommerce brands recover suspended GMC accounts,
-      optimize product feeds, and turn traffic into real sales.
-    </p>
+            <div id="gmc" class="service-content active">
+                <div class="grid-3">
+                    <div class="s-card">
+                        <img src="images/service-gmc-recovery-v1.jpg" alt="GMC">
+                        <h3>GMC Recovery</h3>
+                        <p>সাসপেনশন এবং মিসরিপ্রেজেন্টেশন সমস্যার স্থায়ী সমাধান।</p>
+                    </div>
+                    <div class="s-card">
+                        <img src="images/service-feed-optimization-1.jpg" alt="Feed">
+                        <h3>Feed Optimization</h3>
+                        <p>আপনার প্রোডাক্ট ডাটা ফিডকে নিখুঁতভাবে অপ্টিমাইজ করা।</p>
+                    </div>
+                </div>
+            </div>
 
-    <div class="hero-actions">
-      <a href="#contact" class="btn-primary">Request a Free Audit</a>
-    </div>
-  </div>
-</section>
-<!-- About Me Section -->
-<section id="about" class="about-section">
-  <div class="about-container">
+            <div id="shopify" class="service-content">
+                <div class="grid-3">
+                    <div class="s-card">
+                        <img src="images/service-shopify-optimization-1.jpg" alt="Shopify">
+                        <h3>Store Design</h3>
+                        <p>একটি হাই-কনভার্টিং এবং প্রফেশনাল শপিফাই স্টোর তৈরি।</p>
+                    </div>
+                    <div class="s-card">
+                        <img src="images/service-conversion-optimization-1.jpg" alt="CRO">
+                        <h3>Sales Optimization</h3>
+                        <p>স্টোরের স্পিড এবং ইউজার এক্সপেরিয়েন্স বাড়িয়ে সেলস বৃদ্ধি।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="about-image">
-      <img src="images/about.jpg" alt="Md Rubel Islam - Google Merchant Center & Shopify Specialist">
-    </div>
-
-    <div class="about-content">
-      <h2>About Me</h2>
-      <p>
-        I’m <strong>Md. Rubel Islam</strong>, a Google Merchant Center & Shopify specialist.
-        I help businesses fix Google Merchant Center suspensions, resolve policy issues,
-        and optimize product feeds for better performance.
-      </p>
-
-      <p>
-        Alongside GMC recovery, I also design and optimize Shopify websites to improve
-        user experience and conversion rates. My goal is simple: fix problems, build trust,
-        and help your eCommerce business grow.
-      </p>
-
-      <a href="#contact" class="btn-primary">Work With Me</a>
-    </div>
-
-  </div>
-</section>
-
-
-<section id="services" class="section">
-  <h2 class="section-title">My Core Services</h2>
-
-  <!-- Service 1 -->
-  <div class="service-card">
-    <div class="service-text">
-      <h3>Google Merchant Center Recovery</h3>
-      <ul class="service-list">
-        <li>✔ Identify suspension reasons accurately</li>
-        <li>✔ Fix policy and misrepresentation issues</li>
-        <li>✔ Correct product data and website problems</li>
-        <li>✔ Proper account re-submission</li>
-        <li>✔ Long-term compliance guidance</li>
-      </ul>
-    </div>
-
-    <div class="service-image slider">
-      <img src="images/service-gmc-recovery-v1.jpg" class="active" alt="Google Merchant Center Recovery">
-      <img src="images/service-gmc-recovery-v2.jpg" alt="Google Merchant Center Fix">
-    </div>
-  </div>
-
-  <!-- Service 2 -->
-  <div class="service-card reverse">
-    <div class="service-text">
-      <h3>Product Feed Optimization</h3>
-      <ul class="service-list">
-        <li>✔ Product title and description optimization</li>
-        <li>✔ GTIN, brand and attribute fixes</li>
-        <li>✔ Price and availability error resolution</li>
-        <li>✔ Category and product type optimization</li>
-        <li>✔ Policy-safe feed structure</li>
-      </ul>
-    </div>
-
-    <div class="service-image slider">
-      <img src="images/service-feed-optimization-1.jpg" class="active" alt="Product Feed Optimization">
-      <img src="images/service-feed-optimization-2.jpg" alt="Google Shopping Feed">
-    </div>
-  </div>
-
-  <!-- Service 3 -->
-  <div class="service-card">
-    <div class="service-text">
-      <h3>Shopify Store Optimization</h3>
-      <ul class="service-list">
-        <li>✔ Store speed and performance optimization</li>
-        <li>✔ Policy-compliant product pages</li>
-        <li>✔ Trust signals and conversion elements</li>
-        <li>✔ Checkout and UX improvements</li>
-        <li>✔ Mobile-friendly optimization</li>
-      </ul>
-    </div>
-
-    <div class="service-image slider">
-      <img src="images/service-shopify-optimization-1.jpg" class="active" alt="Shopify Store Optimization">
-      <img src="images/service-shopify-optimization-2.jpg" alt="Shopify UX Improvement">
-    </div>
-  </div>
-
-  <!-- Service 4 -->
-  <div class="service-card reverse">
-    <div class="service-text">
-      <h3>Conversion Rate Optimization</h3>
-      <ul class="service-list">
-        <li>✔ Funnel and user behavior analysis</li>
-        <li>✔ CTA and layout optimization</li>
-        <li>✔ Landing page improvements</li>
-        <li>✔ Trust and credibility enhancements</li>
-        <li>✔ Revenue-focused optimization</li>
-      </ul>
-    </div>
-
-    <div class="service-image slider">
-      <img src="images/service-conversion-optimization-1.jpg" class="active" alt="Conversion Rate Optimization">
-      <img src="images/service-conversion-optimization-2.jpg" alt="Increase Website Conversions">
-    </div>
-  </div>
-</section>
-
-<section id="process" class="section light">
-  <h2>How My Process Works</h2>
-  <div class="grid">
-    <div class="step">Audit & Diagnosis</div>
-    <div class="step">Fix Issues & Optimize</div>
-    <div class="step">Review & Improve</div>
-    <div class="step">Scale & Grow</div>
-  </div>
-</section>
-
-<section id="work" class="section">
-  <h2>Recent Work</h2>
-  <div class="grid">
-    <div class="card">Recovered suspended GMC account for a fashion brand</div>
-    <div class="card">Redesigned Shopify store to improve conversion</div>
-  </div>
-</section>
-
-<section id="faq" class="section light">
-  <h2>Frequently Asked Questions</h2>
-  <div class="faq">
-    <p><strong>How long does GMC recovery take?</strong><br>Usually 3–7 working days.</p>
-    <p><strong>Do you need store access?</strong><br>Yes, collaborator access is required.</p>
-    <p><strong>Is consultation free?</strong><br>Yes — first audit is free.</p>
-  </div>
-</section>
-
-<section id="contact" class="section">
-  <h2>Contact Me</h2>
-  <p>Email: rubelislam.officialpro@gmail.com</p>
-  <p>WhatsApp: +880XXXXXXXXX</p>
-</section>
-
-<footer class="footer">
-  <p>© 2026 Md. Rubel Islam</p>
-</footer>
-
-<a href="https://wa.me/880XXXXXXXXX" class="float whatsapp">WhatsApp</a>
-<a href="https://www.fiverr.com/yourusername" class="float fiverr">Fiverr</a>
-
+    <script>
+        function showService(type) {
+            // সব কন্টেন্ট হাইড করা
+            document.querySelectorAll('.service-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            
+            // নির্দিষ্ট কন্টেন্ট শো করা
+            document.getElementById(type).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
 </body>
 </html>
