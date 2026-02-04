@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md Rubel Islam | eCommerce Specialist</title>
+    <title>Md Rubel Islam | GMC & Shopify Expert</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -18,82 +18,137 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#success">Success History</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contact" class="btn-nav">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="home" class="hero-animation">
+    <section id="home" class="sub-hero">
         <div class="container text-center">
             <h1 class="black-text">Fix Your Google Merchant Center</h1>
             <h1 class="red-text">Suspension - <span id="typed-hero"></span></h1>
         </div>
     </section>
 
-    <section class="gmc-details">
+    <section id="about" class="about-section">
+        <div class="container about-grid">
+            <div class="about-image">
+                <img src="images/about.jpg" alt="Md Rubel Islam">
+            </div>
+            <div class="about-text">
+                <h2 class="name-title">Md Rubel Islam</h2>
+                <h4 class="expert-typing"><span id="typed-about"></span></h4>
+                <p>Expert in resolving complex Google Merchant Center suspensions and building high-converting Shopify stores. I focus on precision and policy compliance to get your business back online.</p>
+                <a href="#contact" class="btn-secondary">Contact For Details</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-bar">
+        <div class="container stats-border">
+            <div class="stat-box"><h3>300+</h3><p>Merchant Fixed</p></div>
+            <div class="stat-box"><h3>150+</h3><p>Shopify Design</p></div>
+            <div class="stat-box"><h3>98%</h3><p>Success Rate</p></div>
+        </div>
+    </section>
+
+    <section class="gmc-info">
         <div class="container">
-            <div class="gmc-row">
-                <div class="gmc-text">
-                    <h2 class="title-red">Common Reasons for <span>GMC Suspension</span></h2>
+            <div class="info-row">
+                <div class="info-text">
+                    <h2 class="title-red">Common Reasons for <span>Suspension</span></h2>
                     <ul class="cross-list">
-                        <li>Misrepresentation of products</li>
+                        <li>Misrepresentation</li>
                         <li>Policy Violations</li>
-                        <li>Website Needs Improvements</li>
+                        <li>Website Need Improvements</li>
                         <li>Circumventing systems</li>
                     </ul>
                 </div>
-                <div class="gmc-img">
-                    <img src="images/service-gmc-recovery-v2.jpg" alt="Reasons">
-                </div>
+                <div class="info-img"><img src="images/service-gmc-recovery-v2.jpg"></div>
             </div>
-
-            <div class="gmc-row reverse">
-                <div class="gmc-text">
-                    <h2 class="title-green">Our Process To <span>Fix Suspension</span></h2>
+            <div class="info-row reverse">
+                <div class="info-text">
+                    <h2 class="title-green">Our Process to <span>Fix GMC</span></h2>
                     <ul class="check-list">
                         <li>Free Audit & Diagnosis</li>
-                        <li>Policy-based Content Fixes</li>
-                        <li>Professional Appeal to Google</li>
+                        <li>Policy-based Updates</li>
+                        <li>Official Appeal to Google</li>
                     </ul>
                 </div>
-                <div class="gmc-img">
-                    <img src="images/service-shopify-optimization-2.jpg" alt="Solutions">
-                </div>
+                <div class="info-img"><img src="images/service-shopify-optimization-2.jpg"></div>
             </div>
         </div>
     </section>
 
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">Professional Services</h2>
-            <div class="service-grid">
-                <div class="service-card">
-                    <img src="images/service-gmc-recovery-v1.jpg">
-                    <h3>GMC Recovery</h3>
+            <h2 class="section-title">My Professional Services</h2>
+            <div class="service-tabs">
+                <button class="tab-btn active" onclick="openService(event, 'gmc')">GMC Services</button>
+                <button class="tab-btn" onclick="openService(event, 'shopify')">Shopify Services</button>
+            </div>
+            <div id="gmc" class="tab-content active">
+                <div class="service-grid">
+                    <div class="service-card"><img src="images/service-gmc-recovery-v1.jpg"><h3>GMC Recovery</h3></div>
+                    <div class="service-card"><img src="images/service-feed-optimization-1.jpg"><h3>Feed Optimization</h3></div>
                 </div>
-                <div class="service-card">
-                    <img src="images/service-shopify-optimization-1.jpg">
-                    <h3>Shopify Setup</h3>
+            </div>
+            <div id="shopify" class="tab-content">
+                <div class="service-grid">
+                    <div class="service-card"><img src="images/service-shopify-optimization-1.jpg"><h3>Store Design</h3></div>
+                    <div class="service-card"><img src="images/service-conversion-optimization-1.jpg"><h3>Sales Growth</h3></div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="success" class="success-section">
+        <div class="container">
+            <h2 class="section-title">Success History</h2>
+            <div class="success-grid">
+                <div class="success-card"><img src="images/success1.jpg"></div>
+                <div class="success-card"><img src="images/success2.jpg"></div>
+                <div class="success-card"><img src="images/success3.jpg"></div>
+                <div class="success-card"><img src="images/success4.jpg"></div>
+                <div class="success-card"><img src="images/success5.jpg"></div>
+                <div class="success-card"><img src="images/success6.jpg"></div>
+            </div>
+        </div>
+    </section>
+
     <footer id="contact" class="footer">
-        <div class="container footer-grid">
+        <div class="container footer-grid-rev">
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:rubelislam.officialpro@gmail.com">rubelislam.officialpro@gmail.com</a></p>
+                <p>Phone: <a href="tel:+8801796746037">+8801796746037</a></p>
+                <p>Address: Dhaka, Bangladesh</p>
+            </div>
             <div class="footer-info">
-                <p>Email: rubelislam.officialpro@gmail.com</p>
-                <p>Phone: +8801796746037</p>
+                <h2>Rubel<span>Digital</span></h2>
+                <div class="social-links">
+                    <a href="https://wa.me/8801796746037" class="btn-wa">WhatsApp</a>
+                    <a href="https://www.fiverr.com/rubelislam_expert" class="btn-fv">Fiverr</a>
+                </div>
             </div>
         </div>
     </footer>
 
     <script>
-        var typed = new Typed('#typed-hero', {
-            strings: ['Policy Violation', 'Misrepresentation', 'Website Improvement'],
-            typeSpeed: 60, backSpeed: 40, loop: true
-        });
+        new Typed('#typed-hero', { strings: ['Policy Violation', 'Misrepresentation', 'Website Improvement'], typeSpeed: 60, backSpeed: 40, loop: true });
+        new Typed('#typed-about', { strings: ['Shopify Expert', 'Google Merchant Expert'], typeSpeed: 70, backSpeed: 50, loop: true });
+        function openService(evt, sName) {
+            var i, tc, tl;
+            tc = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tc.length; i++) tc[i].style.display = "none";
+            tl = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tl.length; i++) tl[i].className = tl[i].className.replace(" active", "");
+            document.getElementById(sName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
     </script>
 </body>
 </html>
