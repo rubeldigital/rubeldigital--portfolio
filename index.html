@@ -29,7 +29,7 @@
     <section id="home" class="sub-hero">
         <div class="container text-center">
             <h1 class="black-text">Fix Your Google Merchant Center</h1>
-            <h1 class="red-text">Suspension - <span id="typed"></span></h1>
+            <h1 class="red-text">Suspension - <span id="typed-hero"></span></h1>
         </div>
     </section>
 
@@ -39,23 +39,27 @@
                 <img src="images/about.jpg" alt="Md Rubel Islam">
             </div>
             <div class="about-text">
-                <h2 class="section-title-left">About Me</h2>
-                <p>Hello! I am <b>Md Rubel Islam</b>, a dedicated eCommerce specialist. Over the years, I have helped hundreds of businesses solve complex Google Merchant Center issues and optimize Shopify stores. My goal is to ensure your business remains compliant and profitable.</p>
-                
-                <div class="success-stats">
-                    <div class="stat-box">
-                        <h3>300+</h3>
-                        <p>Merchant Fixed</p>
-                    </div>
-                    <div class="stat-box">
-                        <h3>150+</h3>
-                        <p>Shopify Design</p>
-                    </div>
-                    <div class="stat-box">
-                        <h3>98%</h3>
-                        <p>Success Rate</p>
-                    </div>
-                </div>
+                <h2 class="name-title">Md Rubel Islam</h2>
+                <h4 class="expert-typing"><span id="typed-about"></span></h4>
+                <p>Expert in resolving complex Google Merchant Center suspensions and building high-converting Shopify stores. I focus on precision, policy compliance, and data-driven strategies to get your products back online and scale your business.</p>
+                <a href="#about-details" class="btn-secondary">View My Details</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-bar">
+        <div class="container stats-border">
+            <div class="stat-box">
+                <h3>300+</h3>
+                <p>Merchant Fixed</p>
+            </div>
+            <div class="stat-box">
+                <h3>150+</h3>
+                <p>Shopify Design</p>
+            </div>
+            <div class="stat-box">
+                <h3>98%</h3>
+                <p>Success Rate</p>
             </div>
         </div>
     </section>
@@ -63,21 +67,38 @@
     <section id="services" class="services">
         <div class="container">
             <h2 class="section-title">My Professional Services</h2>
-            <div class="service-grid-main">
-                <div class="service-item">
-                    <img src="images/service-gmc-recovery-v1.jpg" alt="GMC">
-                    <h3>GMC Recovery</h3>
-                    <p>Fixing complex Misrepresentation and Policy issues.</p>
+            <div class="service-tabs">
+                <button class="tab-btn active" onclick="openService(event, 'gmc-service')">GMC Services</button>
+                <button class="tab-btn" onclick="openService(event, 'shopify-service')">Shopify Services</button>
+            </div>
+
+            <div id="gmc-service" class="tab-content active">
+                <div class="service-grid-main">
+                    <div class="service-item">
+                        <img src="images/service-gmc-recovery-v1.jpg" alt="GMC">
+                        <h3>GMC Recovery</h3>
+                        <p>Solving Misrepresentation & Policy Violations.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="images/service-feed-optimization-1.jpg" alt="Feed">
+                        <h3>Feed Optimization</h3>
+                        <p>Approval-ready product data setup.</p>
+                    </div>
                 </div>
-                <div class="service-item">
-                    <img src="images/service-shopify-optimization-1.jpg" alt="Shopify">
-                    <h3>Shopify Store Design</h3>
-                    <p>High-converting store setup and design optimization.</p>
-                </div>
-                <div class="service-item">
-                    <img src="images/service-feed-optimization-1.jpg" alt="Feed">
-                    <h3>Feed Optimization</h3>
-                    <p>Data feed cleanup for 100% approval.</p>
+            </div>
+
+            <div id="shopify-service" class="tab-content">
+                <div class="service-grid-main">
+                    <div class="service-item">
+                        <img src="images/service-shopify-optimization-1.jpg" alt="Shopify">
+                        <h3>Store Design</h3>
+                        <p>Custom & Professional Store Setup.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="images/service-conversion-optimization-1.jpg" alt="CRO">
+                        <h3>Sales Growth</h3>
+                        <p>Speed & UI/UX Conversion optimization.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -121,8 +142,7 @@
                 <ul>
                     <li>✔ 24/7 Professional Support</li>
                     <li>✔ Expert Knowledge in Google Policy</li>
-                    <li>✔ Quick Turnaround and Permanent Results</li>
-                    <li>✔ Dedicated to Business Growth</li>
+                    <li>✔ Quick Turnaround & Permanent Results</li>
                 </ul>
                 <a href="https://wa.me/8801796746037" class="btn-primary">Hire Me Now</a>
             </div>
@@ -141,8 +161,8 @@
                     <p>Usually, it takes 3-7 business days depending on the issue.</p>
                 </details>
                 <details>
-                    <summary>Do you offer a refund?</summary>
-                    <p>Yes, if the issue cannot be resolved, I have a refund policy.</p>
+                    <summary>Is this a permanent solution?</summary>
+                    <p>Yes, I fix the core policy issues to ensure long-term stability.</p>
                 </details>
                 <details>
                     <summary>Do you need access to my Shopify?</summary>
@@ -153,19 +173,20 @@
     </section>
 
     <footer id="contact" class="footer">
-        <div class="container footer-grid">
+        <div class="container footer-grid-rev">
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:rubelislam.officialpro@gmail.com">rubelislam.officialpro@gmail.com</a></p>
+                <p>Phone: <a href="tel:+8801796746037">+8801796746037</a></p>
+                <p>Address: Dhaka, Bangladesh</p>
+            </div>
             <div class="footer-info">
                 <h2>Rubel<span>Digital</span></h2>
-                <p>Expert GMC & Shopify Solutions.</p>
+                <p>Expert GMC & Shopify Solutions for Global Businesses.</p>
                 <div class="social-links">
                     <a href="https://wa.me/8801796746037" target="_blank" class="btn-wa">WhatsApp</a>
                     <a href="https://www.fiverr.com/rubelislam_expert" target="_blank" class="btn-fv">Fiverr</a>
                 </div>
-            </div>
-            <div class="footer-contact">
-                <h3>Contact Us</h3>
-                <p>Email: rubelislam.officialpro@gmail.com</p>
-                <p>Phone: +8801796746037</p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -174,12 +195,28 @@
     </footer>
 
     <script>
-        var typed = new Typed('#typed', {
+        // Hero Animation
+        new Typed('#typed-hero', {
             strings: ['Policy Violation', 'Misrepresentation', 'Website Need Improvement'],
-            typeSpeed: 60,
-            backSpeed: 40,
-            loop: true
+            typeSpeed: 60, backSpeed: 40, loop: true
         });
+
+        // About Animation
+        new Typed('#typed-about', {
+            strings: ['Shopify Expert', 'Google Merchant Expert'],
+            typeSpeed: 70, backSpeed: 50, loop: true
+        });
+
+        // Tabs Function
+        function openService(evt, serviceName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) { tabcontent[i].style.display = "none"; }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) { tablinks[i].className = tablinks[i].className.replace(" active", ""); }
+            document.getElementById(serviceName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
     </script>
 </body>
 </html>
