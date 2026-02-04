@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md Rubel Islam | GMC & Shopify Expert</title>
+    <title>Md Rubel Islam | eCommerce Specialist</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -18,56 +18,43 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#success">Success Stories</a></li>
+                    <li><a href="#success">Success History</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contact" class="btn-nav">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="home" class="hero">
-        <div class="container hero-grid">
-            <div class="hero-content">
-                <h4 class="sub-heading">Google Merchant Center & Shopify Expert</h4>
-                <h1>Fix GMC <br> <span id="typed"></span></h1>
-                <p>Helping brands recover from Google Merchant Center suspensions and building high-converting Shopify stores since 2021.</p>
-                <div class="hero-btns">
-                    <a href="https://wa.me/8801XXXXXXXXX" target="_blank" class="btn-primary">Message on WhatsApp</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="images/about.jpg" alt="Md Rubel Islam">
-            </div>
+    <section id="home" class="sub-hero">
+        <div class="container text-center">
+            <h1 class="black-text">Fix Your Google Merchant Center</h1>
+            <h1 class="red-text">Suspension - <span id="typed"></span></h1>
         </div>
     </section>
 
     <section id="about" class="about-section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>Hello! I am <b>Md Rubel Islam</b>, a dedicated eCommerce specialist. Over the years, I have helped hundreds of businesses solve complex Google Merchant Center issues. My goal is to ensure your business remains compliant and profitable through expert GMC management and Shopify store optimization.</p>
-                    <p>I focus on precision, policy compliance, and data-driven strategies to get your products back online as quickly as possible.</p>
-                </div>
+        <div class="container about-grid">
+            <div class="about-image">
+                <img src="images/about.jpg" alt="Md Rubel Islam">
             </div>
-        </div>
-    </section>
-
-    <section id="success" class="success-section">
-        <div class="container">
-            <h2 class="section-title">Success Stories</h2>
-            <div class="success-grid">
-                <div class="success-card">
-                    <img src="images/success1.jpg" alt="Proof 1">
-                    <p>GMC Reinstated - Policy Violation Fixed</p>
-                </div>
-                <div class="success-card">
-                    <img src="images/success2.jpg" alt="Proof 2">
-                    <p>Misrepresentation Issue Resolved</p>
-                </div>
-                <div class="success-card">
-                    <img src="images/success3.jpg" alt="Proof 3">
-                    <p>Shopify Store Sales Boosted</p>
+            <div class="about-text">
+                <h2 class="section-title-left">About Me</h2>
+                <p>Hello! I am <b>Md Rubel Islam</b>, a dedicated eCommerce specialist. Over the years, I have helped hundreds of businesses solve complex Google Merchant Center issues and optimize Shopify stores. My goal is to ensure your business remains compliant and profitable.</p>
+                
+                <div class="success-stats">
+                    <div class="stat-box">
+                        <h3>300+</h3>
+                        <p>Merchant Fixed</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>150+</h3>
+                        <p>Shopify Design</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>98%</h3>
+                        <p>Success Rate</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,76 +62,124 @@
 
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">Professional Services</h2>
-            <div class="tab-buttons">
-                <button class="tab-btn active" onclick="openService(event, 'gmc')">GMC Solutions</button>
-                <button class="tab-btn" onclick="openService(event, 'shopify')">Shopify Expert</button>
-            </div>
-
-            <div id="gmc" class="tab-content active">
-                <div class="service-grid">
-                    <div class="service-card">
-                        <h3>Suspension Recovery</h3>
-                        <p>Permanent solutions for Misrepresentation, Policy Violations, and System Circumvention.</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Feed Optimization</h3>
-                        <p>Optimizing product data for 100% approval rates on Google Shopping.</p>
-                    </div>
+            <h2 class="section-title">My Professional Services</h2>
+            <div class="service-grid-main">
+                <div class="service-item">
+                    <img src="images/service-gmc-recovery-v1.jpg" alt="GMC">
+                    <h3>GMC Recovery</h3>
+                    <p>Fixing complex Misrepresentation and Policy issues.</p>
                 </div>
-            </div>
-
-            <div id="shopify" class="tab-content">
-                <div class="service-grid">
-                    <div class="service-card">
-                        <h3>Store Design</h3>
-                        <p>Premium Shopify design focused on user experience and brand value.</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Conversion Growth</h3>
-                        <p>Speed optimization and checkout improvements to double your sales.</p>
-                    </div>
+                <div class="service-item">
+                    <img src="images/service-shopify-optimization-1.jpg" alt="Shopify">
+                    <h3>Shopify Store Design</h3>
+                    <p>High-converting store setup and design optimization.</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/service-feed-optimization-1.jpg" alt="Feed">
+                    <h3>Feed Optimization</h3>
+                    <p>Data feed cleanup for 100% approval.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
+    <section id="success" class="success-section">
+        <div class="container">
+            <h2 class="section-title">Client Success Stories</h2>
+            <div class="success-grid">
+                <div class="success-card"><img src="images/success1.jpg" alt="Success 1"></div>
+                <div class="success-card"><img src="images/success2.jpg" alt="Success 2"></div>
+                <div class="success-card"><img src="images/success3.jpg" alt="Success 3"></div>
+                <div class="success-card"><img src="images/success4.jpg" alt="Success 4"></div>
+                <div class="success-card"><img src="images/success5.jpg" alt="Success 5"></div>
+                <div class="success-card"><img src="images/success6.jpg" alt="Success 6"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <div class="container skills-grid">
+            <div class="skill-circle">
+                <div class="circle-box">98%</div>
+                <p>GMC Fixing</p>
+            </div>
+            <div class="skill-circle">
+                <div class="circle-box">95%</div>
+                <p>Merchant Setup</p>
+            </div>
+            <div class="skill-circle">
+                <div class="circle-box">95%</div>
+                <p>Shopify Design</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose">
+        <div class="container choose-grid">
+            <div class="choose-text">
+                <h2 class="section-title-left">Why Choose Me?</h2>
+                <ul>
+                    <li>✔ 24/7 Professional Support</li>
+                    <li>✔ Expert Knowledge in Google Policy</li>
+                    <li>✔ Quick Turnaround and Permanent Results</li>
+                    <li>✔ Dedicated to Business Growth</li>
+                </ul>
+                <a href="https://wa.me/8801796746037" class="btn-primary">Hire Me Now</a>
+            </div>
+            <div class="choose-image">
+                <img src="images/about.jpg" alt="Rubel Islam">
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title">FAQ</h2>
+            <div class="faq-container">
+                <details>
+                    <summary>How long does GMC fixing take?</summary>
+                    <p>Usually, it takes 3-7 business days depending on the issue.</p>
+                </details>
+                <details>
+                    <summary>Do you offer a refund?</summary>
+                    <p>Yes, if the issue cannot be resolved, I have a refund policy.</p>
+                </details>
+                <details>
+                    <summary>Do you need access to my Shopify?</summary>
+                    <p>Yes, to fix website policy issues, admin access is required.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
         <div class="container footer-grid">
-            <div>
+            <div class="footer-info">
                 <h2>Rubel<span>Digital</span></h2>
                 <p>Expert GMC & Shopify Solutions.</p>
-                <div class="social-icons">
-                    <a href="https://wa.me/8801XXXXXXXXX" target="_blank" class="icon wa">WhatsApp</a>
-                    <a href="https://www.fiverr.com/YOUR_USER_NAME" target="_blank" class="icon fv">Fiverr</a>
+                <div class="social-links">
+                    <a href="https://wa.me/8801796746037" target="_blank" class="btn-wa">WhatsApp</a>
+                    <a href="https://www.fiverr.com/rubelislam_expert" target="_blank" class="btn-fv">Fiverr</a>
                 </div>
             </div>
             <div class="footer-contact">
-                <h3>Contact Info</h3>
+                <h3>Contact Us</h3>
                 <p>Email: rubelislam.officialpro@gmail.com</p>
-                <p>WhatsApp: +8801XXXXXXXXX</p>
+                <p>Phone: +8801796746037</p>
             </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Rubel Digital. All Rights Reserved.</p>
         </div>
     </footer>
 
     <script>
         var typed = new Typed('#typed', {
-            strings: ['Suspension Fixed', 'Misrepresentation Fixed', 'Policy Violation Fixed', 'Website Improved'],
-            typeSpeed: 50,
-            backSpeed: 30,
-            loop: true,
-            color: '#dc2626'
+            strings: ['Policy Violation', 'Misrepresentation', 'Website Need Improvement'],
+            typeSpeed: 60,
+            backSpeed: 40,
+            loop: true
         });
-
-        function openService(evt, serviceName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tab-content");
-            for (i = 0; i < tabcontent.length; i++) { tabcontent[i].style.display = "none"; }
-            tablinks = document.getElementsByClassName("tab-btn");
-            for (i = 0; i < tablinks.length; i++) { tablinks[i].className = tablinks[i].className.replace(" active", ""); }
-            document.getElementById(serviceName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
     </script>
 </body>
 </html>
