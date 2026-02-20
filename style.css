@@ -144,3 +144,22 @@ ul li { list-style: none; font-size: 19px; margin: 15px 0; font-weight: 600; }
 .expertise-card ul li b {
     color: #000;
 }
+/* সব মেইন টাইটেল মিডিলে আনার জন্য */
+.section-title, 
+#services .section-title, 
+.expertise-section .section-title, 
+.success-stories h2 {
+    text-align: center !important; /* লেখা মিডিলে আনবে */
+    width: 100%;
+    font-size: 48px; /* লেখা বড় করবে */
+    font-weight: 800;
+    margin-bottom: 50px; /* নিচের কন্টেন্ট থেকে গ্যাপ বাড়াবে */
+    color: #111;
+    display: block;
+}
+
+/* সাকসেস স্টোরি সেকশনের গ্যাপ ঠিক করতে */
+.success-stories {
+    padding: 80px 0;
+    text-align: center;
+}
