@@ -163,3 +163,18 @@ ul li { list-style: none; font-size: 19px; margin: 15px 0; font-weight: 600; }
     padding: 80px 0;
     text-align: center;
 }
+/* Restricting service image size for better UI balance */
+.service-detail-image img {
+    max-width: 500px; 
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Adjusting layout spacing after image resize */
+.service-detail-item {
+    gap: 100px;
+    align-items: center;
+}
