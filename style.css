@@ -335,3 +335,26 @@ ul li { list-style: none; font-size: 19px; margin: 15px 0; font-weight: 600; }
     border-radius: 10px;
     transition: width 2s ease-in-out; /* এইটা দিলে ধীরে ধীরে বাড়বে */
 }
+/* আইকনগুলোর অরিজিনাল কালার */
+.social-icons a.linkedin {
+    background: #0077b5; /* LinkedIn Blue */
+    color: white;
+}
+
+.social-icons a.fiverr {
+    background: #1dbf73; /* Fiverr Green */
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.social-icons a.whatsapp {
+    background: #25d366; /* WhatsApp Green */
+    color: white;
+}
+
+/* মাউস নিলে হালকা বড় হবে */
+.social-icons a:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
