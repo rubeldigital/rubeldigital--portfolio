@@ -97,3 +97,50 @@ ul li { list-style: none; font-size: 19px; margin: 15px 0; font-weight: 600; }
     color: #fff;
     border-color: #0f172a;
 }
+.expertise-section {
+    padding: 80px 0;
+    background-color: #fcfcfc;
+}
+
+.expertise-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.expertise-card {
+    flex: 1;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+.expertise-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.expertise-card h3 {
+    font-size: 24px;
+    color: #111;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2563eb;
+    display: inline-block;
+}
+
+.expertise-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.expertise-card ul li {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #444;
+}
+
+.expertise-card ul li b {
+    color: #000;
+}
