@@ -226,3 +226,41 @@ ul li { list-style: none; font-size: 19px; margin: 15px 0; font-weight: 600; }
 .service-detail-item.reverse {
     flex-direction: row-reverse !important;
 }
+.skills-section {
+    padding: 80px 0;
+    background: #f9f9f9;
+}
+
+.skills-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    margin-bottom: 30px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.progress-line {
+    height: 12px;
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-line span {
+    height: 100%;
+    background: linear-gradient(90deg, #ff4b2b, #ff416c); /* তোর সাইটের কালার অনুযায়ী চেঞ্জ করতে পারিস */
+    display: block;
+    border-radius: 10px;
+    transition: width 2s ease-in-out; /* এইটা দিলে ধীরে ধীরে বাড়বে */
+}

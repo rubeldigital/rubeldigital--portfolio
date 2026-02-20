@@ -192,7 +192,42 @@
             </div>
         </div>
     </section>
+<section class="skills-section">
+    <div class="container">
+        <h2 class="section-title">Our Skills</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span>Google Merchant Center (GMC)</span>
+                    <span class="skill-percent">98%</span>
+                </div>
+                <div class="progress-line" data-percent="98%">
+                    <span style="width: 0;"></span>
+                </div>
+            </div>
 
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span>Google Ads & Shopping</span>
+                    <span class="skill-percent">95%</span>
+                </div>
+                <div class="progress-line" data-percent="95%">
+                    <span style="width: 0;"></span>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span>Shopify & WordPress SEO</span>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-line" data-percent="90%">
+                    <span style="width: 0;"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <footer id="contact" class="footer">
         <div class="container footer-grid-rev">
             <div class="footer-contact">
@@ -223,5 +258,22 @@
             evt.currentTarget.className += " active";
         }
     </script>
+    <script>
+    // যখন কেউ স্ক্রল করে এই সেকশনে আসবে, তখনই অ্যানিমেশন শুরু হবে
+    const progressLines = document.querySelectorAll('.progress-line span');
+    
+    window.addEventListener('scroll', () => {
+        progressLines.forEach(line => {
+            const parent = line.parentElement;
+            const targetWidth = parent.getAttribute('data-percent');
+            const sectionPos = parent.getBoundingClientRect().top;
+            const screenPos = window.innerHeight / 1.2;
+
+            if(sectionPos < screenPos) {
+                line.style.width = targetWidth;
+            }
+        });
+    });
+</script>
 </body>
 </html>
