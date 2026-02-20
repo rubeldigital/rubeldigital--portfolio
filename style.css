@@ -163,37 +163,50 @@ ul li { list-style: none; font-size: 19px; margin: 15px 0; font-weight: 600; }
     padding: 80px 0;
     text-align: center;
 }
-/* Final fix for Service Section: Balancing Image and Multi-line Text */
+/* Service Section Layout Fix */
 .service-detail-item {
     display: flex;
-    align-items: center; /* ইমেজ আর টেক্সট যেন লম্বালম্বিভাবে মাঝখানে থাকে */
+    align-items: center; /* লেখা আর ইমেজকে লম্বালম্বিভাবে মাঝখানে রাখবে */
     justify-content: space-between;
-    gap: 80px; /* ইমেজ আর লেখার মাঝখানে সুন্দর গ্যাপ */
-    margin-bottom: 100px;
+    gap: 120px; /* এইটা ইমেজ আর লেখার মাঝখানের গ্যাপ বাড়াবে (মাউসের গ্যাপের মতো) */
+    margin-bottom: 120px; /* এক সেকশন থেকে আরেক সেকশনের গ্যাপ */
+    width: 100%;
+}
+
+/* Reverse layout for the second item (ইমেজ ডানে, লেখা বামে) */
+.service-detail-item.reverse {
+    flex-direction: row-reverse;
 }
 
 .service-detail-text {
     flex: 1;
-    max-width: 550px; /* লেখা লম্বা হতে বাধা দেবে, ফলে লেখাগুলো ভেঙে নিচে নামবে */
+    max-width: 500px; /* লেখা এক লাইনে হবে না, বক্সের মতো থাকবে */
 }
 
 .service-detail-image {
     flex: 1;
+    display: flex;
+    justify-content: center; /* ইমেজটাকে তার বক্সের মাঝখানে রাখবে */
 }
 
 .service-detail-image img {
-    max-width: 500px; /* ইমেজ পিসি লেভেলের সাইজে থাকবে */
+    max-width: 480px; /* পিসি লেভেল ইমেজ সাইজ */
     width: 100%;
     height: auto;
-    border-radius: 12px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1); /* হালকা শ্যাডো যাতে প্রফেশনাল লাগে */
 }
 
+/* Text Styling inside the box */
 .service-detail-text h2 {
-    font-size: 32px;
+    font-size: 36px;
+    color: #111;
     margin-bottom: 20px;
+    line-height: 1.3;
 }
 
 .service-detail-text p {
-    line-height: 1.7; /* পড়ার সুবিধার্থে লাইনের মাঝে গ্যাপ */
-    margin-bottom: 15px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #444;
 }
