@@ -55,15 +55,86 @@ ul li { list-style: none; font-size: 19px; margin: 15px 0; font-weight: 600; }
 .success-card img { width: 100%; border-radius: 10px; border: 1px solid #ddd; transition: 0.3s; }
 .success-card img:hover { transform: scale(1.03); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
 
-/* Footer */
-.footer { background: #0f172a; color: #fff; padding: 80px 0 30px; }
-.footer-grid-rev { display: grid; grid-template-columns: 1fr 1.5fr; gap: 80px; }
-.footer-contact a { color: #fff; text-decoration: none; font-weight: 600; }
-.social-links { margin-top: 25px; display: flex; gap: 20px; }
-.btn-wa { background: #25d366; color: #fff; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: 700; }
-.btn-fv { background: #1dbf73; color: #fff; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: 700; }
+/* Premium Footer CSS */
+.footer-area {
+    background: #111;
+    color: #fff;
+    padding: 60px 0 20px;
+    font-family: 'Poppins', sans-serif;
+}
 
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-title {
+    color: #ff4b2b;
+    font-size: 22px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer-desc {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.contact-list i {
+    color: #ff4b2b;
+    margin-right: 10px;
+}
+
+/* গোল আইকন বার */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon-circle {
+    width: 45px;
+    height: 45px;
+    background: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+.icon-circle:hover {
+    background: #ff4b2b;
+    transform: translateY(-5px);
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    color: #777;
+    font-size: 14px;
+}
 
 /* সার্ভিস সেকশনের টাইটেল বাটন এর উপরে এবং বড় করার জন্য */
 .services .section-title {
