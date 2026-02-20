@@ -163,18 +163,37 @@ ul li { list-style: none; font-size: 19px; margin: 15px 0; font-weight: 600; }
     padding: 80px 0;
     text-align: center;
 }
-/* Restricting service image size for better UI balance */
+/* Final fix for Service Section: Balancing Image and Multi-line Text */
+.service-detail-item {
+    display: flex;
+    align-items: center; /* ইমেজ আর টেক্সট যেন লম্বালম্বিভাবে মাঝখানে থাকে */
+    justify-content: space-between;
+    gap: 80px; /* ইমেজ আর লেখার মাঝখানে সুন্দর গ্যাপ */
+    margin-bottom: 100px;
+}
+
+.service-detail-text {
+    flex: 1;
+    max-width: 550px; /* লেখা লম্বা হতে বাধা দেবে, ফলে লেখাগুলো ভেঙে নিচে নামবে */
+}
+
+.service-detail-image {
+    flex: 1;
+}
+
 .service-detail-image img {
-    max-width: 500px; 
+    max-width: 500px; /* ইমেজ পিসি লেভেলের সাইজে থাকবে */
     width: 100%;
     height: auto;
     border-radius: 12px;
-    display: block;
-    margin: 0 auto;
 }
 
-/* Adjusting layout spacing after image resize */
-.service-detail-item {
-    gap: 100px;
-    align-items: center;
+.service-detail-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.service-detail-text p {
+    line-height: 1.7; /* পড়ার সুবিধার্থে লাইনের মাঝে গ্যাপ */
+    margin-bottom: 15px;
 }
