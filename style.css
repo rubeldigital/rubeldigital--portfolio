@@ -433,3 +433,42 @@ html { scroll-behavior: smooth; }
     background: #1dbf73;
     color: white !important;
 }
+/* --- ইমেজ বর্ডার ওভাররাইড (বর্ডার + গ্লো) --- */
+img {
+    border: 5px solid #1dbf73 !important; /* উজ্জ্বল সবুজ বর্ডার */
+    border-radius: 20px !important;
+    transition: all 0.4s ease-in-out !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2) !important;
+}
+
+img:hover {
+    transform: translateY(-10px) !important; /* উপরে উঠবে */
+    border-color: #25d366 !important; /* হোয়াটসঅ্যাপ গ্রিন */
+    box-shadow: 0 15px 30px rgba(37, 211, 102, 0.4) !important; /* সবুজ আলো ছড়াবে */
+}
+
+/* --- মেনু বাটন ওভাররাইড (বাটন স্টাইল) --- */
+.nav-menu li a, 
+header nav ul li a, 
+.nav-link {
+    display: inline-block !important;
+    padding: 10px 22px !important;
+    margin: 5px !important;
+    background-color: #f8f9fa !important; /* সুন্দর ছাই রঙের বাটন */
+    color: #333 !important;
+    text-decoration: none !important;
+    border-radius: 50px !important; /* বাটন গোল হবে */
+    font-weight: 700 !important;
+    border: 2px solid #1dbf73 !important; /* বাটনের বর্ডারও সবুজ */
+    transition: all 0.3s ease !important;
+    font-size: 15px !important;
+}
+
+/* মাউস নিলে বাটনের কালার পাল্টাবে */
+.nav-menu li a:hover, 
+header nav ul li a:hover {
+    background-color: #1dbf73 !important; /* ফাইবার গ্রিন */
+    color: #ffffff !important;
+    transform: scale(1.1) !important;
+    box-shadow: 0 5px 15px rgba(29, 191, 115, 0.3) !important;
+}
