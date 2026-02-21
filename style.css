@@ -66,14 +66,15 @@ ul li { list-style: none; font-size: 19px; margin: 15px 0; font-weight: 600; }
 .footer-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
-    margin-bottom: 40px;
+    justify-content: space-between; /* এটা দিলে তিন কোণায় ছড়িয়ে যাবে */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-
 .footer-col {
     flex: 1;
-    min-width: 250px;
+    min-width: 300px; /* যাতে মোবাইলে একটার নিচে একটা আসে */
+    padding: 20px;
 }
 
 .footer-title {
@@ -358,3 +359,35 @@ ul li { list-style: none; font-size: 19px; margin: 15px 0; font-weight: 600; }
     transform: scale(1.1);
     filter: brightness(1.1);
 }
+.about-flex {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 0;
+}
+.about-img img {
+    max-width: 400px; /* ছবি বেশি বড় হবে না */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.about-text h2 { font-size: 36px; margin-bottom: 20px; }
+.about-text p { 
+    font-size: 18px; 
+    line-height: 1.8; 
+    color: #333; 
+    margin-bottom: 15px; 
+}
+.btn-hire {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #ff4b2b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn-hire:hover { background: #333; transform: scale(1.05); }
+
+/* Smooth Scroll */
+html { scroll-behavior: smooth; }
