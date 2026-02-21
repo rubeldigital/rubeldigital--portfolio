@@ -391,3 +391,45 @@ ul li { list-style: none; font-size: 19px; margin: 15px 0; font-weight: 600; }
 
 /* Smooth Scroll */
 html { scroll-behavior: smooth; }
+
+/* ছবির স্টাইল */
+.about-img img, .service-img img, .portfolio-img img {
+    border: 3px solid #1dbf73; /* ফাইভার গ্রিন কালার বর্ডার */
+    border-radius: 15px; /* কোনাগুলো একটু গোল */
+    transition: all 0.4s ease; /* ওঠানামা করার স্মুথনেস */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* যখন মাউস নিবি তখন বর্ডার আরও উজ্জ্বল হবে */
+.about-img img:hover, .service-img img:hover {
+    border-color: #25d366; /* হোয়াটসঅ্যাপ গ্রিন */
+    transform: translateY(-10px); /* একটু উপরে উঠবে */
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4); /* সবুজ গ্লো (আলো) দিবে */
+}
+/* মেনু লিঙ্কগুলোকে বাটন বানানো */
+.nav-menu li a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    background: #f1f1f1; /* বাটনের হালকা কালার */
+    color: #333 !important;
+    text-decoration: none;
+    border-radius: 5px; /* বাটন শেপ */
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 1px solid #ddd;
+}
+
+/* মাউস নিলে বাটনের কালার চেঞ্জ হবে */
+.nav-menu li a:hover {
+    background: #ff4b2b; /* তোর থিম কালার (লালচে-কমলা) */
+    color: white !important;
+    border-color: #ff4b2b;
+    transform: scale(1.05); /* হালকা বড় হবে */
+}
+
+/* একটিভ মেনু বাটন (সবুজ করে দিচ্ছি) */
+.nav-menu li a.active {
+    background: #1dbf73;
+    color: white !important;
+}
