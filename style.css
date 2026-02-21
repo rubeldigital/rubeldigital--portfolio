@@ -584,3 +584,61 @@ header, .navbar-area {
         max-width: 300px !important;
     }
 }
+/* --- About Me: লেখা বামে, ছবি ডানে (Final Fix) --- */
+#about .container {
+    display: flex !important;
+    flex-direction: row-reverse !important; /* এটা ছবিকে ডানে আর লেখাকে বামে ঠেলে দিবে */
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 40px !important;
+    padding: 60px 20px !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+/* লেখার স্টাইল (বামে থাকবে) */
+#about .about-text, #about .content, #about .left-side {
+    flex: 1 !important;
+    text-align: left !important;
+}
+
+#about h2 {
+    font-size: 40px !important;
+    font-weight: 800 !important;
+    color: #222 !important;
+    margin-bottom: 20px !important;
+}
+
+#about p {
+    font-size: 19px !important; /* লেখা বড় ও বোল্ড */
+    line-height: 1.7 !important;
+    font-weight: 600 !important;
+    color: #444 !important;
+    margin-bottom: 25px !important;
+}
+
+/* ছবির স্টাইল (ডানে থাকবে) */
+#about .about-img, #about .image-part, #about .right-side {
+    flex: 1 !important;
+    display: flex !important;
+    justify-content: flex-end !important; /* ছবিকে একদম ডানে রাখবে */
+}
+
+#about img {
+    max-width: 450px !important; /* স্ট্যান্ডার্ড সাইজ */
+    width: 100% !important;
+    height: auto !important;
+    border: 6px solid #1dbf73 !important; /* সুন্দর সবুজ বর্ডার */
+    border-radius: 20px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+}
+
+/* মোবাইলে যেন একটার নিচে একটা আসে */
+@media (max-width: 768px) {
+    #about .container {
+        flex-direction: column !important;
+    }
+    #about img {
+        max-width: 100% !important;
+    }
+}
