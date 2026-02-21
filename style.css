@@ -472,3 +472,73 @@ header nav ul li a:hover {
     transform: scale(1.1) !important;
     box-shadow: 0 5px 15px rgba(29, 191, 115, 0.3) !important;
 }
+/* --- মেনু বাটনগুলোকে ছোট এবং প্রফেশনাল করা --- */
+.nav-menu li a, 
+header nav ul li a, 
+.nav-link {
+    padding: 5px 12px !important; /* সাইজ অনেক ছোট করে দিলাম */
+    margin: 0 4px !important;    /* দুই পাশের গ্যাপ কমালাম */
+    font-size: 13px !important;  /* লেখাটা একটু ছোট ও শার্প করলাম */
+    border-radius: 20px !important; /* গোল ভাবটা থাকবে কিন্তু ছোট হবে */
+    border: 1.5px solid #1dbf73 !important; /* চিকন বর্ডার */
+    background-color: transparent !important; /* ব্যাকগ্রাউন্ড ট্রান্সপারেন্ট রাখলাম দেখতে ভালো লাগবে */
+    color: #1dbf73 !important; /* লেখার রঙ সবুজ */
+}
+
+/* মাউস নিলে যে ইফেক্ট হবে */
+.nav-menu li a:hover, 
+header nav ul li a:hover {
+    background-color: #1dbf73 !important; /* মাউস নিলে ভরাট সবুজ হবে */
+    color: #fff !important; /* লেখা সাদা হয়ে যাবে */
+    transform: scale(1.05) !important; /* হালকা একটু বড় হবে */
+}
+
+/* যদি পুরো হেডারটা খুব চওড়া হয়ে থাকে সেটা কমানোর জন্য */
+header, .navbar-area {
+    padding: 5px 0 !important;
+}
+/* --- About Me সেকশন ফিক্স (ছবি ছোট ও লেখা বড়) --- */
+#about {
+    padding: 60px 0 !important;
+}
+
+#about .container {
+    display: flex !important;
+    align-items: center !important; /* ছবি আর লেখা মাঝামাঝি থাকবে */
+    gap: 50px !important; /* ছবি আর লেখার মাঝখানের ফাঁকা জায়গা */
+    flex-wrap: wrap !important;
+}
+
+/* ছবি ছোট করার মেইন কোড */
+#about img {
+    max-width: 350px !important; /* ছবিটা ৩৫০ পিক্সেলের বেশি বড় হবে না */
+    height: auto !important;
+    border-radius: 15px !important;
+    border: 4px solid #1dbf73 !important; /* তোর প্রিয় সবুজ বর্ডার */
+}
+
+/* লেখাগুলো সুন্দর করার কোড */
+#about h2 {
+    font-size: 36px !important;
+    font-weight: 800 !important;
+    margin-bottom: 20px !important;
+}
+
+#about p {
+    font-size: 18px !important; /* লেখা একটু বড় করলাম */
+    line-height: 1.8 !important;
+    font-weight: 500 !important;
+    color: #333 !important;
+}
+
+/* হায়ার মি বাটনটা সুন্দর করা */
+.btn-hire {
+    display: inline-block !important;
+    padding: 12px 30px !important;
+    background-color: #ff4b2b !important;
+    color: #fff !important;
+    border-radius: 50px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    margin-top: 15px !important;
+}
