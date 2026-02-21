@@ -542,3 +542,45 @@ header, .navbar-area {
     font-weight: bold !important;
     margin-top: 15px !important;
 }
+/* --- About Me সেকশন (লেখা বামে, ছবি ডানে) --- */
+#about .container {
+    display: flex !important;
+    flex-direction: row !important; /* লেখা বামে, ছবি ডানে রাখার জন্য */
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 40px !important;
+    flex-wrap: wrap !important; /* মোবাইলে যেন একটার নিচে একটা আসে */
+}
+
+/* লেখার অংশ (বাম দিকে থাকবে) */
+#about .about-text, #about .content {
+    flex: 1 !important;
+    text-align: left !important;
+    order: 1 !important; /* লেখা আগে আসবে */
+}
+
+/* ছবির অংশ (ডান দিকে থাকবে) */
+#about .about-img, #about .image-part {
+    flex: 1 !important;
+    text-align: right !important;
+    order: 2 !important; /* ছবি পরে আসবে */
+}
+
+/* ছবির সাইজ একটু বাড়িয়ে দিলাম যাতে একদম ছোট না লাগে */
+#about img {
+    max-width: 400px !important; 
+    width: 100% !important;
+    height: auto !important;
+    border: 5px solid #1dbf73 !important;
+    border-radius: 20px !important;
+}
+
+/* মোবাইলের জন্য ঠিক করা (যাতে মোবাইলে ছবি উপরে আর লেখা নিচে আসে) */
+@media (max-width: 768px) {
+    #about .container {
+        flex-direction: column-reverse !important;
+    }
+    #about img {
+        max-width: 300px !important;
+    }
+}
